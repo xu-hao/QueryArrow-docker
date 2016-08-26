@@ -24,5 +24,5 @@ RUN stack build ; exit 0
 COPY config.json rewriting.rules /QueryArrow/test/
 
 # set entry point
-ENTRYPOINT ["stack", "exec", "QueryArrow", "/QueryArrow/test/config.json", "tcp", "localhost", "12345"]
+ENTRYPOINT ["stack", "exec", "QueryArrow", "/QueryArrow/test/config.json", "tcp", "*", "12345"]
 EXPOSE 12345

@@ -1,0 +1,15 @@
+{
+    "db_plugins" : [{
+        "db_info" : {
+           "db_port" : 5432,
+           "db_name" : ["ICAT"],
+           "db_path" : ["ICAT"],
+           "db_password" : "testpassword",
+           "db_host" : "localhost",
+           "db_username" : "irods",
+           "db_odbc_type" : "unix",
+           "catalog_database_type" : "SQL/HDBC/PostgreSQL"
+        }
+    }],
+    "rewriting_file_path" : "/QueryArrow/test/rewriting.rules"
+}

@@ -18,7 +18,7 @@ WORKDIR /QueryArrow
 RUN stack setup
 RUN stack install --only-dependencies
 RUN make gen
-RUN stack build ; exit 0
+RUN stack build ; exit 0 # currently test doesn't build, but it doesn't affect server
 
 # add config file
 COPY config.json rewriting.rules /QueryArrow/test/
